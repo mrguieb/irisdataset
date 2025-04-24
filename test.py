@@ -44,11 +44,7 @@ def predict_species(sepal_length, sepal_width, petal_length, petal_width):
 
 # --- Streamlit UI ---
 st.title("🌸 Iris Species Predictor")
-st.write("Emgie L. Guieb")
-st.write("Piolo Bong Merin")
-st.write("Jester Nite")
-st.write("Daruel Sales")
-st.write("Aldrin Ulpindo")
+st.write("Emgie L. Guieb, Piolo Bong Merin, Jester Nite, Daruel Sales, Aldrin Ulpindo")
 
 # Input fields
 sepal_length = st.number_input("Sepal Length (cm)", min_value=0.0, max_value=10.0, step=0.1)
