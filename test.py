@@ -5,8 +5,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
-# Load dataset from public URL
-df = pd.read_csv("https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/Iris.csv")
+# ✅ Use correct working dataset URL
+df = pd.read_csv("https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv")
 
 # Rename and prepare
 df.rename(columns={
@@ -43,7 +43,6 @@ def predict_species(sepal_length, sepal_width, petal_length, petal_width):
     return target_names[prediction[0]]
 
 # --- Streamlit UI ---
-
 st.title("🌸 Iris Species Predictor")
 st.caption("Powered by Logistic Regression and the classic Iris dataset")
 
